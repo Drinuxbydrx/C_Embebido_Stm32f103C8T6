@@ -117,7 +117,7 @@ Para codificar nuestro primer **Hola mundo** vamos a configurar nuestra terminal
 
 <img src="Imagenes/img3.png">
 
-[Click para ver el codigo Hola Mundo](URL_de_GitHub)
+[Click para ver el codigo Hola Mundo](https://github.com/Drinuxbydrx/C_Embebido_Stm32f103C8T6/blob/main/Hola_Mundo_Comunicacion_Uart/hola_mundo/Core/Src/main.c)
 
 y finalmente tenemos nuestro hola mundo corriendo en la placa stm32f103c8t6.
 <img src="Imagenes/img4.png">
