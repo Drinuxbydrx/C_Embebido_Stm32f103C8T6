@@ -150,3 +150,36 @@ void mensajeholamundo(void){
 
 y finalmente tenemos nuestro hola mundo corriendo en la placa stm32f103c8t6.
 <img src="Imagenes/img4.png">
+
+Ahora ya que pudimos integrar un mensaje desde consola vamos a obtener los datos de igual forma con comunicacion UART a traves de la consola para esto integramos la siguiente funcion 
+
+``` c++
+void UART_Leertexto(char *buffer,uint16_t max_longitud){
+	uint16_t id = 0;
+	uint8_t caracter = 0;
+	memset(buffer,0,max_longitud);
+	while(id<max_longitud -1){
+		detecciontexto=HAL_UART_Receive(&huart1,&caracter,1,10000);
+		if(detecciontexto == HAL_OK){
+			HAL_UART_Transmit(&huart1,&caracter,1,10);
+			if(caracter=='\r'||caracter=='\n'){
+				break;
+			}
+			buffer[id++]=(char) caracter;
+		}
+	}
+            buffer[id]='\0';
+}
+```
+[Click para ver el codigo Leer Texto Consola UART]()
+
+lo cargamos al microcontrolador y ejecutamos la consola con nuestro comando
+
+```bash
+sudo picocom -b 115200 /dev/ttyUSB0
+```
+<img src="Imagenes/img5.png">
+
+y ejecutamos nuestro codigo y obtenemos la siguiente salida en consola
+
+<img src="Imagenes/img6.png">

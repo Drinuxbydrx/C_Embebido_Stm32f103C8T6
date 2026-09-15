@@ -19,6 +19,7 @@ Startup/
 .cproject
 .project
 hola_mundo.ioc
+LeerTextoConsolaUART.ioc
 STM32F103C8TX_FLASH.ld
 # Archivos temporales de sistema y editores
 .DS_Store
