@@ -171,7 +171,7 @@ void UART_Leertexto(char *buffer,uint16_t max_longitud){
             buffer[id]='\0';
 }
 ```
-[Click para ver el codigo Leer Texto Consola UART]()
+[Click para ver el codigo Leer Texto Consola UART](https://github.com/Drinuxbydrx/C_Embebido_Stm32f103C8T6/blob/main/Leer_entradas_por_consola_UART/LeerTextoConsolaUART/Core/Src/main.c)
 
 lo cargamos al microcontrolador y ejecutamos la consola con nuestro comando
 
