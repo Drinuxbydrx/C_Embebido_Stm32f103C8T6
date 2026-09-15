@@ -137,7 +137,7 @@ HAL_UART_Transmit(&huart1, datos, sizeof(datos), 100);
 uint32_t Timeout : Tiempo máximo de espera en milisegundos (ms) para completar el envío.
 
 ```
-Funcion principal para ejecutar nuestro Hola mundo
+Funcion principal mensaje hola mundo
 ``` c++
 void mensajeholamundo(void){
 	uint8_t mensaje[]="Hola mundo sistemas embebidos\r\n";
