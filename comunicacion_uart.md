@@ -113,9 +113,38 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif
 ``` 
-Para codificar nuestro primer **Hola mundo** vamos a configurar nuestra terminal con la misma velocidad de BAude rate que habias puesto en el proyecto **115200**
+Para codificar nuestro primer **Hola mundo** vamos a configurar nuestra terminal con la misma velocidad de Baude rate que habiamos configurado **115200**
 
 <img src="Imagenes/img3.png">
+
+Sintaxis general para transmitir texto via UART
+
+
+``` c++
+HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+
+Donde :
+
+UART_HandleTypeDef *huart : es el puntero a nuestra configuracion que realizamos UART.
+const uint8_t *pData : es el puntero a el arreglo del buffer donde se almacena nuestro mensaje.
+uint16_t Size : Cantidad total de bytes a enviar. El -1 se utiliza para indicar que es una 
+cadena de texto envuelta entre comillas.Si se desea enviar diferente tipo de informacion que no este envuelta enre comillas. 
+
+uint8_t datos[] = {0x01, 0x02, 0x03, 0x04};
+
+HAL_UART_Transmit(&huart1, datos, sizeof(datos), 100);
+
+uint32_t Timeout : Tiempo máximo de espera en milisegundos (ms) para completar el envío.
+
+```
+Funcion principal para ejecutar nuestro Hola mundo
+``` c++
+void mensajeholamundo(void){
+	uint8_t mensaje[]="Hola mundo sistemas embebidos\r\n";
+	HAL_UART_Transmit(&huart1,mensaje,sizeof(mensaje) -1,100);
+	HAL_Delay(1000);
+}
+``` 
 
 [Click para ver el codigo Hola Mundo](https://github.com/Drinuxbydrx/C_Embebido_Stm32f103C8T6/blob/main/Hola_Mundo_Comunicacion_Uart/hola_mundo/Core/Src/main.c)
 
