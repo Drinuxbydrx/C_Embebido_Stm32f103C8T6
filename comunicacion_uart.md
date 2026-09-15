@@ -113,4 +113,11 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif
 ``` 
+Para codificar nuestro primer **Hola mundo** vamos a configurar nuestra terminal con la misma velocidad de BAude rate que habias puesto en el proyecto **115200**
 
+<img src="Imagenes/img3.png">
+
+[Click para ver el codigo Hola Mundo](URL_de_GitHub)
+
+y finalmente tenemos nuestro hola mundo corriendo en la placa stm32f103c8t6.
+<img src="Imagenes/img4.png">

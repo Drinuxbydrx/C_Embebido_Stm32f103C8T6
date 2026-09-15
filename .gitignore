@@ -1,0 +1,27 @@
+# Archivos de compilación de STM32CubeIDE / GCC
+Debug/
+Release/
+Drivers/
+Startup/
+*.o
+*.su
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+# Ignorar carpetas y archivos de entorno de STM32CubeIDE / Eclipse
+.metadata/
+.settings/
+.buildpath
+.project.pref
+.cproject
+.project
+hola_mundo.ioc
+STM32F103C8TX_FLASH.ld
+# Archivos temporales de sistema y editores
+.DS_Store
+Thumbs.db
+*.swp
+*~
