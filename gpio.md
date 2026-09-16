@@ -42,7 +42,8 @@ Función | Descripción | Ejemplo de Sintaxis |
 | **`HAL_GPIO_DeInit`** | Desconfigura un pin y lo regresa a su estado por defecto tras el reset. | `HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0);` |
 
 ### Esquematico Conexiones entre Pantalla Lcd y STM32F103C8T6
-Esquematico de las conexiones entre la pantalla LCD y el microcontrolador cabe mencionar que estas conexiones se pueden aplicar a LCD 16*2 y 16*4
+Esquematico de las conexiones entre la pantalla LCD y el microcontrolador cabe mencionar que estas conexiones se pueden aplicar a LCD 16x2 y 16x4<br>
+
 <img src="Imagenes/img8.png">
 
 ### Configuración GPIO de placa de desarrollo STM32F103C8T6
@@ -69,7 +70,7 @@ void LCD_Init(void):Funcion para iniciar la configuracion principal del LCD.
 void LCD_SendString(char *str):Funcion para enviar el texto a la pantalla LCD.
 ```
 
-[Codigo de pantalla LCD]()
+[Codigo de pantalla LCD](https://github.com/Drinuxbydrx/C_Embebido_Stm32f103C8T6/blob/main/GPIOconPantallaLCD/PantallaLCD/Core/Src/main.c)
 
 Al ejecutarlo obtenemos una salida como esta en nuestra pantalla LCD
 <img src="Imagenes/img9.jpg">
