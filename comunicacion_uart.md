@@ -183,3 +183,5 @@ sudo picocom -b 115200 /dev/ttyUSB0
 y ejecutamos nuestro codigo y obtenemos la siguiente salida en consola
 
 <img src="Imagenes/img6.png">
+
+
