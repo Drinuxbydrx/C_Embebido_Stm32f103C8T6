@@ -4,5 +4,24 @@ Repositorio enfocado a practicar conceptos teóricos de programación en C embeb
 
 [💬 Comunicación UART](https://github.com/Drinuxbydrx/C_Embebido_Stm32f103C8T6/blob/main/comunicacion_uart.md)
 
-[💬 GPIO General Purpose Input/Output, o Entrada/Salida de Propósito General]()
+[💬 GPIO General Purpose Input/Output, o Entrada/Salida de Propósito General](https://github.com/Drinuxbydrx/C_Embebido_Stm32f103C8T6/blob/main/gpio.md)
+
+[💬 Protocolo de comunicacion I2C]()
+
+[💬 SPI]()
+
+[💬 Registros de memoria]()
+
+[💬 ADC]()
+
+[💬 DMA]()
+
+[💬 NVIC]()
+
+[💬 Timmers]()
+
+[💬 DMA]()
+
+[💬 System Tick Timmer]()
+
 
