@@ -12,15 +12,13 @@ Repositorio enfocado a practicar conceptos teóricos de programación en C embeb
 
 [💬 Registros de memoria]()
 
-[💬 ADC]()
-
 [💬 DMA]()
 
 [💬 NVIC]()
 
 [💬 Timmers]()
 
-[💬 DMA]()
+[💬 ADC]()
 
 [💬 System Tick Timmer]()
 
