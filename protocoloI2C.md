@@ -84,7 +84,7 @@ Para este escáner de bus requerimos comunicación UART. Para ello, seleccionamo
 * Baud Rate: 115200 Bits/s
 <img src="Imagenes/img11.png">
 
-[💬 Codigo Scanner protocolo de comunicacion I2C]()
+[💬 Codigo Scanner protocolo de comunicacion I2C](https://github.com/Drinuxbydrx/C_Embebido_Stm32f103C8T6/blob/main/Pantalla_LCD_comunicacion_I2C/Scanner_de_diecciones_I2C/Core/Src/main.c)
 
 
 ### Conexiones Fisicas.
