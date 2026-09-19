@@ -10,16 +10,6 @@ Repositorio enfocado a practicar conceptos teóricos de programación en C embeb
 
 [💬 SPI]()
 
-[💬 Registros de memoria]()
 
-[💬 DMA]()
-
-[💬 NVIC]()
-
-[💬 Timmers]()
-
-[💬 ADC]()
-
-[💬 System Tick Timmer]()
 
 
